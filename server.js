@@ -56,6 +56,6 @@ app.use('/api/instagram', friends);
 app.use('/api/instagram', message);
 app.use('/api/instagram', image);
 
-server.listen(3000, () => {
+server.listen( process.env || 3000, () => {
     console.log("working");
 });  
